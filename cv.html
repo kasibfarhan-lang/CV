@@ -14,47 +14,54 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: Poppins, sans-serif; color: var(--ink); background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 
-.page { width: 210mm; height: 297mm; padding: 10mm 11mm 8mm; overflow: hidden; display: flex; flex-direction: column; }
+.page { width: 210mm; height: 297mm; padding: 11mm 11mm 9mm; overflow: hidden; display: flex; flex-direction: column; page-break-after: always; }
+.page:last-child { page-break-after: auto; }
 
-header h1 { font-size: 28pt; font-weight: 700; letter-spacing: 0.5pt; line-height: 1.1; }
-header .role { font-size: 12pt; color: var(--muted); margin-top: 1pt; }
-header .tagline { font-size: 8.5pt; color: var(--muted); }
+header h1 { font-size: 29pt; font-weight: 700; letter-spacing: 0.5pt; line-height: 1.1; }
+header .role { font-size: 12.5pt; color: var(--muted); margin-top: 1pt; }
+header .tagline { font-size: 8.8pt; color: var(--muted); }
 
-.cols { display: flex; gap: 7mm; margin-top: 5mm; flex: 1; min-height: 0; }
-aside { width: 60mm; flex: none; background: var(--dark); color: #fff; padding: 5mm 4.5mm; }
+.cols { display: flex; gap: 7mm; margin-top: 6mm; flex: 1; min-height: 0; }
+.cols.top { margin-top: 0; }
+aside { width: 60mm; flex: none; background: var(--dark); color: #fff; padding: 6mm 5mm; }
 main { flex: 1; min-width: 0; }
 
-aside h2 { font-size: 10.5pt; font-weight: 700; letter-spacing: 0.4pt; padding-bottom: 2pt; border-bottom: 1.1pt solid #fff; margin: 0 0 6pt; }
-aside section + section { margin-top: 12pt; }
-aside .contact li { list-style: none; display: flex; align-items: center; gap: 6pt; font-size: 7.6pt; margin-bottom: 6pt; word-break: break-all; }
-aside .contact svg { width: 9pt; height: 9pt; flex: none; fill: #fff; }
+aside h2 { font-size: 11pt; font-weight: 700; letter-spacing: 0.4pt; padding-bottom: 2pt; border-bottom: 1.1pt solid #fff; margin: 0 0 7pt; }
+aside section + section { margin-top: 15pt; }
+aside .contact li { list-style: none; display: flex; align-items: center; gap: 6pt; font-size: 8pt; margin-bottom: 8pt; word-break: break-all; }
+aside .contact svg { width: 9.5pt; height: 9.5pt; flex: none; fill: #fff; }
 aside a { color: #fff; }
-aside .edu-title { font-size: 9pt; font-weight: 500; line-height: 1.3; }
-aside .edu-meta { font-size: 7.6pt; line-height: 1.4; margin-top: 1pt; }
-aside .edu + .edu { margin-top: 6pt; }
+aside .edu-title { font-size: 9.6pt; font-weight: 500; line-height: 1.3; }
+aside .edu-meta { font-size: 8pt; line-height: 1.45; margin-top: 1pt; }
+aside .edu + .edu { margin-top: 8pt; }
 aside ul.bullets { padding-left: 10pt; }
-aside ul.bullets li { font-size: 7.7pt; line-height: 1.35; margin-bottom: 3pt; }
-aside ul.two { display: grid; grid-template-columns: 1fr 1fr; column-gap: 12pt; }
+aside ul.bullets li { font-size: 8.2pt; line-height: 1.4; margin-bottom: 4.5pt; }
 
-main h2 { font-size: 11.5pt; font-weight: 700; letter-spacing: 0.3pt; padding-bottom: 2pt; border-bottom: 1.1pt solid var(--rule); margin-bottom: 5pt; }
-main section + section { margin-top: 9pt; }
-main p { font-size: 8pt; line-height: 1.5; color: var(--muted); text-align: justify; }
+main h2 { font-size: 12pt; font-weight: 700; letter-spacing: 0.3pt; padding-bottom: 2pt; border-bottom: 1.1pt solid var(--rule); margin-bottom: 6pt; }
+main section + section { margin-top: 12pt; }
+main p { font-size: 8.4pt; line-height: 1.55; color: var(--muted); text-align: justify; }
 
-.job + .job { margin-top: 6pt; }
+.ach { padding-left: 12pt; }
+.ach li { font-size: 8.3pt; line-height: 1.5; color: var(--muted); margin-bottom: 2.5pt; }
+.ach b { color: var(--ink); font-weight: 600; }
+
+.job + .job { margin-top: 9pt; }
 .job .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8pt; }
-.job .title { font-size: 8.9pt; font-weight: 600; }
-.job .dates { font-size: 8.5pt; white-space: nowrap; }
-.job .org { font-size: 8.4pt; margin: 0 0 2pt; }
+.job .title { font-size: 9.4pt; font-weight: 600; }
+.job .dates { font-size: 9pt; white-space: nowrap; }
+.job .org { font-size: 8.8pt; margin: 0 0 2pt; }
 .job ul { padding-left: 12pt; }
-.job li { font-size: 7.9pt; line-height: 1.45; color: var(--muted); }
+.job li { font-size: 8.3pt; line-height: 1.5; color: var(--muted); }
 </style>
 </head>
 <body>
+
+<!-- ============ PAGE 1 ============ -->
 <div class="page">
   <header>
     <h1>MOHAMED AZMEER</h1>
     <div class="role">Procurement Specialist</div>
-    <div class="tagline">Hospitality &amp; F&amp;B Procurement · Vendor Management · Cost Control</div>
+    <div class="tagline">Hospitality &amp; F&amp;B Procurement · Team Leadership · Vendor Management · Cost Savings</div>
   </header>
 
   <div class="cols">
@@ -72,12 +79,16 @@ main p { font-size: 8pt; line-height: 1.5; color: var(--muted); text-align: just
       <section>
         <h2>CORE COMPETENCIES</h2>
         <ul class="bullets">
-          <li>F&amp;B &amp; non-F&amp;B sourcing</li>
-          <li>Supplier negotiation – price, delivery &amp; contract terms</li>
+          <li>Buyer supervision, training &amp; mentoring</li>
+          <li>RFQs, RFPs &amp; quotation evaluation</li>
+          <li>Negotiation &amp; Total Cost of Ownership (TCO)</li>
+          <li>Vendor &amp; supplier relationship management</li>
+          <li>Supplier performance &amp; KPI reporting</li>
           <li>Contract management &amp; renewals</li>
-          <li>Vendor management &amp; coordination</li>
           <li>Purchasing budgets &amp; cost control</li>
-          <li>End-to-end purchasing process</li>
+          <li>Procure-to-pay process &amp; end-user training</li>
+          <li>SOP development &amp; process improvement</li>
+          <li>F&amp;B &amp; non-F&amp;B sourcing</li>
           <li>Meeting end-user &amp; technical requirements</li>
           <li>Inventory monitoring &amp; on-time supply</li>
           <li>Quality &amp; safety compliance</li>
@@ -85,46 +96,34 @@ main p { font-size: 8pt; line-height: 1.5; color: var(--muted); text-align: just
           <li>Hotel operations &amp; supplier ecosystems</li>
         </ul>
       </section>
-
-      <section>
-        <h2>SYSTEMS</h2>
-        <ul class="bullets">
-          <li>Microsoft Dynamics (ERP)</li>
-          <li>SAP (Full Working Proficiency)</li>
-        </ul>
-        <ul class="bullets two">
-          <li>WebProlific</li>
-          <li>Peachtree</li>
-          <li>Tally</li>
-          <li>QuickBooks</li>
-          <li>MS Office</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>EDUCATION</h2>
-        <div class="edu">
-          <div class="edu-title">Master of Business Administration (MBA)</div>
-          <div class="edu-meta">Anglia Ruskin University, UK<br>Currently reading<br>(Sep 2025 – Sep 2026)</div>
-        </div>
-        <div class="edu">
-          <div class="edu-title">G.C.E. O/L</div>
-          <div class="edu-meta">Successfully completed – 2008, Sri Lanka</div>
-        </div>
-      </section>
-
-      <section>
-        <h2>CERTIFICATION</h2>
-        <ul class="bullets">
-          <li>Certified Purchasing Professional</li>
-        </ul>
-      </section>
     </aside>
 
     <main>
       <section>
         <h2>PROFILE SUMMARY</h2>
-        <p>Procurement professional with 12+ years of experience in hotel and hospitality procurement in the UAE, covering F&amp;B, non-F&amp;B, engineering &amp; landscape and logistics purchasing. Certified Purchasing Professional with hands-on experience in supplier sourcing, negotiation, contract management and renewals, purchasing budgets and cost control, and supervising the end-to-end purchasing process. Experienced in aligning purchases with end-user and technical requirements, and in delivering high-volume, high-profile event procurement, including EXPO 2020 Dubai (approx. 20,000 meals per day) and COP28 UAE (VVIP President’s Pavilion). Skilled in ERP-based procurement (Microsoft Dynamics, SAP) and currently reading for an MBA. Focused on efficiency, cost savings and value-driven sourcing aligned with hospitality standards.</p>
+        <p>Procurement professional with 12+ years of experience in hotel and hospitality procurement in the UAE, covering F&amp;B, non-F&amp;B, engineering &amp; landscape and logistics purchasing. Certified Purchasing Professional and MBA graduate (Anglia Ruskin University, UK) with hands-on experience supervising and training buyers, running RFQs and RFPs, negotiating on a Total Cost of Ownership basis, and managing vendor contracts and supplier performance through KPIs. Delivered consistent monthly cost reductions of around 3–5% and savings of approx. AED 600,000 on a single project. Experienced in high-volume, high-profile event procurement, including EXPO 2020 Dubai (approx. 20,000 meals per day) and COP28 UAE (VVIP President’s Pavilion). Skilled in ERP-based procurement (Microsoft Dynamics, SAP), SOP development and training end users on the procure-to-pay process.</p>
+      </section>
+
+      <section>
+        <h2>KEY ACHIEVEMENTS</h2>
+        <ul class="ach">
+          <li><b>Approx. AED 600,000 in savings</b> on the ERTH Abu Dhabi Ramadan Project (2019).</li>
+          <li><b>Monthly cost reductions of around 3–5%</b> achieved consistently during tenure at ERTH.</li>
+          <li><b>Managed F&amp;B supply of approx. 20,000 meals per day</b> for the EXPO 2020 Dubai workforce.</li>
+          <li><b>Led VVIP-level F&amp;B procurement</b> for the President’s Pavilion at COP28 UAE.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>PROCUREMENT LEADERSHIP &amp; RESPONSIBILITIES</h2>
+        <ul class="ach">
+          <li>Supervised buyers – assigning tasks, monitoring performance, and training and mentoring them on product knowledge, systems and negotiation skills.</li>
+          <li>Prepared and issued quotation requests (RFQs) and RFPs, and evaluated supplier proposals to obtain the most competitive offers.</li>
+          <li>Negotiated with suppliers and evaluated offers on a Total Cost of Ownership (TCO) basis, not unit price alone.</li>
+          <li>Tracked supplier performance and created, maintained and reported on procurement KPIs, using reports to support decision-making.</li>
+          <li>Developed and updated departmental procurement SOPs, and recommended system and process improvements.</li>
+          <li>Trained end users on the procure-to-pay process, including raising purchase requisitions in the ERP (Microsoft Dynamics / SAP).</li>
+        </ul>
       </section>
 
       <section>
@@ -139,6 +138,51 @@ main p { font-size: 8pt; line-height: 1.5; color: var(--muted); text-align: just
             <li>Use Microsoft Dynamics ERP to support daily procurement and coordination.</li>
           </ul>
         </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<!-- ============ PAGE 2 ============ -->
+<div class="page">
+  <div class="cols top">
+    <aside>
+      <section>
+        <h2>EDUCATION</h2>
+        <div class="edu">
+          <div class="edu-title">Master of Business Administration (MBA)</div>
+          <div class="edu-meta">Anglia Ruskin University, UK<br>Completed (Sep 2025 – Sep 2026)</div>
+        </div>
+        <div class="edu">
+          <div class="edu-title">G.C.E. O/L</div>
+          <div class="edu-meta">Successfully completed – 2008, Sri Lanka</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>CERTIFICATION</h2>
+        <ul class="bullets">
+          <li>Certified Purchasing Professional</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>SYSTEMS</h2>
+        <ul class="bullets">
+          <li>Microsoft Dynamics (ERP)</li>
+          <li>SAP (Full Working Proficiency)</li>
+          <li>WebProl'IFIC</li>
+          <li>Peachtree</li>
+          <li>Tally</li>
+          <li>QuickBooks</li>
+          <li>MS Office</li>
+        </ul>
+      </section>
+    </aside>
+
+    <main>
+      <section>
+        <h2>WORK EXPERIENCE (CONTINUED)</h2>
 
         <div class="job">
           <div class="top"><span class="title">Procurement Executive (Engineering &amp; Landscape)</span><span class="dates">2022 – 2025</span></div>
@@ -178,7 +222,7 @@ main p { font-size: 8pt; line-height: 1.5; color: var(--muted); text-align: just
         <h2>KEY EVENT PROCUREMENT</h2>
 
         <div class="job">
-          <div class="top"><span class="title">EXPO 2020 Dubai</span><span class="dates">2020 – 2021</span></div>
+          <div class="top"><span class="title">EXPO 2020 Dubai</span><span class="dates">2021 – 2022</span></div>
           <ul>
             <li>Played a key role in procurement operations, managing the food and beverage supply for the workforce – approximately 20,000 meals per day.</li>
             <li>Oversaw F&amp;B procurement and service delivery for both the UAE and Pakistan Pavilions.</li>
@@ -197,5 +241,6 @@ main p { font-size: 8pt; line-height: 1.5; color: var(--muted); text-align: just
     </main>
   </div>
 </div>
+
 </body>
 </html>
