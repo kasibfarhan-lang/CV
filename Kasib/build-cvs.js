@@ -22,7 +22,7 @@ const C = {
     'MBA (CGPA 3.62); fluent in English, Hindi, Tamil and Urdu.',
   highlights: [
     ['MYR 6.2M+ qualified pipeline', ' built from 100+ high-profile enterprise accounts, from cold outreach to close.'],
-    ['7 qualified enterprise leads in one week', ' at Ai Everything Abu Dhabi, incl. a national telecom group and a global SaaS vendor.'],
+    ['Cross-border expansion', ' across the Middle East and East Asia, managing business development teams in multiple countries.'],
     ['800+ SMEs', ' supported to build greener, more sustainable value chains through national sustainability programmes.'],
     ['AI-automated sales process', ': personally built an internal billing system and an AI help-desk agent (Slack + Jira).'],
   ],
@@ -34,11 +34,11 @@ const C = {
         title: 'AI Go-to-Market Lead, Middle East',
         dates: 'Sep 2026 – Present',
         bullets: [
-          'Lead UAE market entry for Axsona, an AI platform that tests AI agents, products and messaging on synthetic populations of AI personas before launch.',
-          'Generated 7 qualified enterprise and partner leads in one week at Ai Everything Abu Dhabi, including a national telecom group and a global SaaS vendor, at VP and C-level.',
-          'Wrote 7 account-specific partnership proposals and outreach sequences, mapping use cases to each buyer’s priorities (AI agent trust, campaign pre-testing, regulatory impact, user adoption).',
-          'Designed the regional outbound playbook: a three-lane LinkedIn strategy (partners, direct buyers, warm network) across ~70 target accounts in banking, telecom, fintech, aviation, retail and real estate.',
-          'Built sales enablement (pitch openers, objection handling, answer cards) and aligned positioning with leadership and the data science team.',
+          'Lead Axsona’s end-to-end market entry into the UAE and wider Middle East, from ICP and segment prioritisation to positioning, partner model and pipeline targets.',
+          'Building an AI-automated GTM engine (account research, lead enrichment, personalised multi-channel outreach and CRM updates) so a lean team can run outbound across several segments at once.',
+          'Developing a two-track route to market: direct enterprise sales into banking, telecom, fintech, retail and real estate, plus a partner channel of agencies, consultancies and AI implementers.',
+          'Turning buyer conversations and regional industry events into account-specific proposals, sales collateral and team enablement.',
+          'Setting up the regional sales operating rhythm (pipeline stages, weekly activity targets, leadership reporting) to move from first pilots to repeatable revenue.',
         ],
       }],
     },
@@ -96,7 +96,7 @@ const C = {
   ],
   skills: [
     ['Go-to-Market & Sales', 'GTM strategy, market entry, B2B enterprise sales, full-cycle sales, pipeline generation, account research, product demos, RFP/RFQ, proposals, strategic and channel partnerships, sales enablement, CRM'],
-    ['AI & Automation', 'AI agents, generative AI (Claude, Gemini), synthetic audience testing, sales process automation, Slack and Jira integrations'],
+    ['AI & GTM Engineering', 'GTM engineering, outbound and sales process automation, lead enrichment, AI agents, generative AI (Claude, Gemini), Slack and Jira integrations'],
     ['Leadership', 'Cross-border team management, hiring and onboarding, stakeholder management, product ownership'],
   ],
   languages: 'English (native/bilingual); Hindi, Tamil, Urdu (full professional); Sinhala (professional working); Arabic (limited working)',
@@ -308,7 +308,7 @@ async function modern() {
         { spacing: { before: first ? (i ? 120 : 0) : 60 } }));
       if (first) ch.push(lineLR(j.org, j.loc, { bold: true, color: '444444' }, { italics: true, color: '444444' }, { spacing: { after: 20 } }));
       // Key Achievements already carries the headline metrics, so keep each role to its strongest points
-      const skip = ['Built sales enablement', 'Shaped go-to-market', 'Streamlined workflows'];
+      const skip = ['Turning buyer conversations', 'Shaped go-to-market', 'Streamlined workflows'];
       r.bullets.filter(b => !skip.some(x => b.startsWith(x))).forEach(b => ch.push(bullet(b)));
     });
   });
