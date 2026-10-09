@@ -139,7 +139,6 @@ const GTM = {
     ['AI sales pipeline automation', ': LLM-driven account research, enrichment and outreach drafts, synced to the CRM.'],
     ['Axsona GTM engine (in progress)', ': multi-segment outbound for UAE entry, from ICP signals to pipeline reporting.'],
   ],
-  boxLink: 'Write-up and demos: [add link]',
   skills: [
     ['GTM Engineering & AI', 'Claude Code, Claude API, Gemini API, AI agents, REST APIs and webhooks, Slack and Jira APIs, workflow automation, lead enrichment, outbound sequencing, CRM, GitHub'],
     ['Go-to-Market & Sales', 'GTM strategy, market entry, ICP and segmentation, full-cycle B2B sales, pipeline generation, product demos, RFP/RFQ, partnerships, sales enablement'],
