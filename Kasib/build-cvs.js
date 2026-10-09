@@ -8,24 +8,38 @@ const {
 const OUT = '/home/user/CV/Kasib';
 
 // ---------- Shared content ----------
+// Bullet text lives in B; each CV variant picks and orders the keys it needs.
+const B = {
+  // Axsona
+  axEntry: 'Lead Axsona’s end-to-end market entry into the UAE and wider Middle East, from ICP and segment prioritisation to positioning, partner model and pipeline targets.',
+  axEngine: 'Building an AI-automated GTM engine (account research, lead enrichment, personalised multi-channel outreach and CRM updates) so a lean team can run outbound across several segments at once.',
+  axRoutes: 'Developing a two-track route to market: direct enterprise sales into banking, telecom, fintech, retail and real estate, plus a partner channel of agencies, consultancies and AI implementers.',
+  axCollateral: 'Turning buyer conversations and regional industry events into account-specific proposals, sales collateral and team enablement.',
+  axRhythm: 'Setting up the regional sales operating rhythm (pipeline stages, weekly activity targets, leadership reporting) to move from first pilots to repeatable revenue.',
+  // Pantas
+  paPipeline: 'Owned the full B2B SaaS sales cycle, building a MYR 6.2M+ (≈ USD 1.4M) qualified pipeline from 100+ high-profile enterprise accounts, from cold outreach to close.',
+  paDemos: 'Ran product demos, led RFP/RFQ processes and scoped proposals that moved high-value prospects through to close.',
+  paAutomation: 'Automated the sales process with AI from prospecting to close; built an internal billing system and an AI help-desk agent (Slack + Jira) with Claude Code and APIs.',
+  paAutomationShort: 'Automated the sales process with AI from prospecting to close (see Selected Builds).',
+  paSmes: 'Drove sustainability enablement for 800+ SMEs through central-bank and multilateral programmes, including Bank Negara Malaysia’s Greening Value Chain (GVC) and Greening Halal Business (GHB).',
+  paGtm: 'Shaped go-to-market strategy through strategic partnerships and outbound campaigns, opening new channels and high-value accounts.',
+  // BackwardsLA
+  blAccounts: 'Managed client accounts worth USD 5,000+, joined client pitches and supported deals through to close.',
+  blExpansion: 'Directed market expansion across the Middle East and East Asia, managing cross-border teams and hiring and onboarding business development staff.',
+  blProduct: 'Product Owner for a Growth Program giving students real-world industry experience through hands-on projects and mentorship.',
+  blOps: 'Streamlined workflows between representatives and prospects; served as the link between regional operations and executive leadership.',
+  blLeads: 'Sourced, qualified and handed over leads to the sales team, exceeding performance targets.',
+  blHandoff: 'Streamlined the lead hand-off with sales and marketing to improve client conversion.',
+};
+
 const C = {
   name: 'Mohamed Kasib Farhan Cassim',
   location: 'United Arab Emirates',
   email: 'kasibfarhan@gmail.com',
-  phone: '+971 XX XXX XXXX',
+  phone: '+971 56 406 165',
   linkedin: 'linkedin.com/in/mohamed-kasib-farhan-cassim-7b2a4222b',
-  headline: 'AI Go-to-Market Lead  |  Business Development  |  B2B Enterprise Sales',
-  summary:
-    'AI go-to-market lead with B2B sales and business development experience across the Middle East and Southeast Asia. ' +
-    'Built a MYR 6.2M+ qualified pipeline from 100+ enterprise accounts and now leads UAE market entry for Axsona, an AI platform ' +
-    'that tests products and AI agents on synthetic populations before launch. Builds AI automations that make sales teams faster. ' +
-    'MBA (CGPA 3.62); fluent in English, Hindi, Tamil and Urdu.',
-  highlights: [
-    ['MYR 6.2M+ qualified pipeline', ' built from 100+ high-profile enterprise accounts, from cold outreach to close.'],
-    ['Cross-border expansion', ' across the Middle East and East Asia, managing business development teams in multiple countries.'],
-    ['800+ SMEs', ' supported to build greener, more sustainable value chains through national sustainability programmes.'],
-    ['AI-automated sales process', ': personally built an internal billing system and an AI help-desk agent (Slack + Jira).'],
-  ],
+  status: 'Own visa (no sponsorship needed)',
+  licence: 'Driving licence',
   jobs: [
     {
       org: 'Axsona (Pantas Software Sdn. Bhd.)',
@@ -33,13 +47,8 @@ const C = {
       roles: [{
         title: 'AI Go-to-Market Lead, Middle East',
         dates: 'Sep 2026 – Present',
-        bullets: [
-          'Lead Axsona’s end-to-end market entry into the UAE and wider Middle East, from ICP and segment prioritisation to positioning, partner model and pipeline targets.',
-          'Building an AI-automated GTM engine (account research, lead enrichment, personalised multi-channel outreach and CRM updates) so a lean team can run outbound across several segments at once.',
-          'Developing a two-track route to market: direct enterprise sales into banking, telecom, fintech, retail and real estate, plus a partner channel of agencies, consultancies and AI implementers.',
-          'Turning buyer conversations and regional industry events into account-specific proposals, sales collateral and team enablement.',
-          'Setting up the regional sales operating rhythm (pipeline stages, weekly activity targets, leadership reporting) to move from first pilots to repeatable revenue.',
-        ],
+        bd: ['axEntry', 'axEngine', 'axRoutes', 'axCollateral', 'axRhythm'],
+        gtm: ['axEngine', 'axEntry', 'axRhythm', 'axRoutes'],
       }],
     },
     {
@@ -48,13 +57,8 @@ const C = {
       roles: [{
         title: 'Business Development & Go-to-Market Specialist',
         dates: 'Aug 2025 – Aug 2026',
-        bullets: [
-          'Owned the full sales cycle, building a MYR 6.2M+ (≈ USD 1.4M) qualified pipeline from 100+ high-profile enterprise accounts, from cold outreach to close.',
-          'Ran product demos, led RFP/RFQ processes and scoped proposals that moved high-value prospects through to close.',
-          'Automated the sales process with AI from prospecting to close; personally built an internal billing system and an AI help-desk agent (Slack + Jira).',
-          'Drove sustainability enablement for 800+ SMEs, building greener value chains with the SFIA, GHB and GVC programmes.',
-          'Shaped go-to-market strategy through strategic partnerships and outbound campaigns, opening new channels and high-value accounts.',
-        ],
+        bd: ['paPipeline', 'paDemos', 'paAutomation', 'paSmes', 'paGtm'],
+        gtm: ['paAutomationShort', 'paPipeline', 'paDemos', 'paSmes'],
       }],
     },
     {
@@ -64,20 +68,14 @@ const C = {
         {
           title: 'Strategy and Operations Lead',
           dates: 'Jun 2025 – Oct 2025',
-          bullets: [
-            'Led client acquisition and business development, including high-impact pitches across key verticals.',
-            'Directed market expansion across the Middle East and East Asia, managing cross-border teams and hiring and onboarding business development staff.',
-            'Product Owner for a Growth Program giving students real-world industry experience through hands-on projects and mentorship.',
-            'Streamlined workflows between representatives and prospects; served as the link between regional operations and executive leadership.',
-          ],
+          bd: ['blAccounts', 'blExpansion', 'blProduct', 'blOps'],
+          gtm: ['blOps', 'blAccounts', 'blExpansion'],
         },
         {
           title: 'Business Development Manager',
           dates: 'Mar 2025 – Jul 2025',
-          bullets: [
-            'Qualified and delivered high-quality leads to the sales team, consistently exceeding performance targets.',
-            'Streamlined the lead hand-off with sales and marketing to improve client conversion.',
-          ],
+          bd: ['blLeads', 'blHandoff'],
+          gtm: ['blLeads'],
         },
       ],
     },
@@ -94,12 +92,60 @@ const C = {
       notes: ['Activities: APU Muslim Association'],
     },
   ],
-  skills: [
-    ['Go-to-Market & Sales', 'GTM strategy, market entry, B2B enterprise sales, full-cycle sales, pipeline generation, account research, product demos, RFP/RFQ, proposals, strategic and channel partnerships, sales enablement, CRM'],
-    ['AI & GTM Engineering', 'GTM engineering, outbound and sales process automation, lead enrichment, AI agents, generative AI (Claude, Gemini), Slack and Jira integrations'],
-    ['Leadership', 'Cross-border team management, hiring and onboarding, stakeholder management, product ownership'],
-  ],
   languages: 'English (native/bilingual); Hindi, Tamil, Urdu (full professional); Sinhala (professional working); Arabic (limited working)',
+};
+
+const CLASSIC_SKIP = ['paGtm'];
+
+const SKILL_LEAD = ['Leadership', 'Cross-border team management, hiring and onboarding, stakeholder management, product ownership'];
+
+// Business Development / Sales version (also used by the Harvard and Stanford layouts)
+const BD = {
+  key: 'bd',
+  title: 'AI Go-to-Market Lead, Middle East',
+  headline: 'Business Development  |  B2B Enterprise Sales  |  AI & SaaS',
+  summary:
+    'Business development and sales professional for AI and B2B SaaS, with full-cycle experience across the Middle East and Southeast Asia. ' +
+    'Built a MYR 6.2M+ qualified pipeline from 100+ enterprise accounts, ran demos and RFPs through to close, and now leads UAE market entry for ' +
+    'Axsona, an AI platform that tests products and AI agents on synthetic populations before launch. Uses AI automation to sell faster. ' +
+    'MBA (CGPA 3.62); fluent in English, Hindi, Tamil and Urdu.',
+  boxTitle: 'Key Achievements',
+  box: [
+    ['MYR 6.2M+ qualified pipeline', ' built from 100+ high-profile enterprise accounts, from cold outreach to close.'],
+    ['Cross-border expansion', ' across the Middle East and East Asia, managing business development teams in multiple countries.'],
+    ['800+ SMEs', ' enabled on sustainability through Bank Negara Malaysia’s Greening Value Chain and related programmes.'],
+    ['AI-automated sales process', ': built an internal billing system and an AI help-desk agent (Slack + Jira) with Claude Code.'],
+  ],
+  skills: [
+    ['Sales & Business Development', 'B2B enterprise sales, full-cycle sales, prospecting, discovery, pipeline generation, product demos, RFP/RFQ, proposals, account management, strategic and channel partnerships, market entry, GTM strategy'],
+    ['AI & Tools', 'Claude Code, Claude and Gemini APIs, AI agents, sales automation, CRM, Slack, Jira, Google Workspace'],
+    SKILL_LEAD,
+  ],
+  skip: ['axCollateral', 'paGtm', 'blProduct'], // dropped in the dense Modern layout only
+};
+
+// GTM Engineer version
+const GTM = {
+  key: 'gtm',
+  headline: 'GTM Engineer  |  AI Sales Automation  |  Go-to-Market Strategy',
+  summary:
+    'GTM engineer who builds the systems behind sales: AI automations, made with Claude Code and APIs, that take work from prospecting ' +
+    'to close. Backed by hands-on full-cycle selling (MYR 6.2M+ qualified pipeline from 100+ enterprise accounts). Now building Axsona’s ' +
+    'AI-automated GTM engine for market entry into the UAE and Middle East. MBA (CGPA 3.62); fluent in English, Hindi, Tamil and Urdu.',
+  boxTitle: 'Selected Builds',
+  box: [
+    ['AI help-desk agent (Slack + Jira)', ': handles support requests in Slack and creates, routes and updates Jira tickets.'],
+    ['Internal billing system', ': built end to end with Claude Code to automate invoicing work previously done by hand.'],
+    ['AI sales pipeline automation', ': LLM-driven account research, enrichment and outreach drafts, synced to the CRM.'],
+    ['Axsona GTM engine (in progress)', ': multi-segment outbound for UAE entry, from ICP signals to pipeline reporting.'],
+  ],
+  boxLink: 'Write-up and demos: [add link]',
+  skills: [
+    ['GTM Engineering & AI', 'Claude Code, Claude API, Gemini API, AI agents, REST APIs and webhooks, Slack and Jira APIs, workflow automation, lead enrichment, outbound sequencing, CRM, GitHub'],
+    ['Go-to-Market & Sales', 'GTM strategy, market entry, ICP and segmentation, full-cycle B2B sales, pipeline generation, product demos, RFP/RFQ, partnerships, sales enablement'],
+    SKILL_LEAD,
+  ],
+  skip: [],
 };
 
 // ---------- Helpers ----------
@@ -158,7 +204,9 @@ function contactLines(h, sep, pOpts = {}) {
       link(C.email, 'mailto:' + C.email), run(sep),
       run(C.phone, { highlight: 'yellow' }),
     ] }),
-    new Paragraph({ ...pOpts, spacing: { after: 40 }, children: [link(C.linkedin, 'https://www.' + C.linkedin)] }),
+    new Paragraph({ ...pOpts, spacing: { after: 40 }, children: [
+      link(C.linkedin, 'https://www.' + C.linkedin), run(sep), run(C.status), run(sep), run(C.licence),
+    ] }),
   ];
 }
 
@@ -212,12 +260,12 @@ async function harvard() {
     ch.push(lineLR(j.org, j.loc, { bold: true }, {}, { spacing: { before: i ? 100 : 0 } }));
     j.roles.forEach((r, k) => {
       ch.push(lineLR(r.title, r.dates, { italics: true }, {}, { spacing: { before: k ? 50 : 0 } }));
-      r.bullets.forEach(b => ch.push(bullet(b)));
+      r.bd.filter(k => !CLASSIC_SKIP.includes(k)).forEach(k => ch.push(bullet(B[k])));
     });
   });
 
   ch.push(heading('Skills, Languages & Interests'));
-  C.skills.forEach(([k, v]) => ch.push(para([run(k + ': ', { bold: true }), run(v)], { spacing: { after: 20, line: 245 } })));
+  BD.skills.forEach(([k, v]) => ch.push(para([run(k + ': ', { bold: true }), run(v)], { spacing: { after: 20, line: 245 } })));
   ch.push(para([run('Languages: ', { bold: true }), run(C.languages)], { spacing: { after: 20, line: 245 } }));
   ch.push(para([run('Interests: ', { bold: true }), run('Applied AI and agentic systems, sustainability, startup ecosystems in the GCC and Southeast Asia')], { spacing: { after: 0, line: 245 } }));
 
@@ -241,18 +289,18 @@ async function stanford() {
   const ch = [];
 
   ch.push(new Paragraph({ spacing: { after: 20 }, children: [run(C.name, { bold: true, size: 36, color: CARDINAL })] }));
-  ch.push(new Paragraph({ spacing: { after: 30 }, children: [run('AI Go-to-Market Lead, Middle East', { italics: true, size: 20, color: '555555' })] }));
+  ch.push(new Paragraph({ spacing: { after: 30 }, children: [run(BD.title, { italics: true, size: 20, color: '555555' })] }));
   ch.push(...contactLines(h, '   |   '));
 
   ch.push(heading('Summary'));
-  ch.push(para([run(C.summary)], { spacing: { after: 20, line: 250 }, alignment: AlignmentType.JUSTIFIED }));
+  ch.push(para([run(BD.summary)], { spacing: { after: 20, line: 250 }, alignment: AlignmentType.JUSTIFIED }));
 
   ch.push(heading('Experience'));
   C.jobs.forEach((j, i) => {
     ch.push(lineLR(j.org.toUpperCase(), j.loc, { bold: true, size: 19, characterSpacing: 10 }, { italics: true, color: '555555' }, { spacing: { before: i ? 110 : 0 } }));
     j.roles.forEach((r, k) => {
       ch.push(lineLR(r.title, r.dates, { bold: true, color: CARDINAL }, { color: '555555' }, { spacing: { before: k ? 50 : 10, after: 10 } }));
-      r.bullets.forEach(b => ch.push(bullet(b)));
+      r.bd.filter(k => !CLASSIC_SKIP.includes(k)).forEach(k => ch.push(bullet(B[k])));
     });
   });
 
@@ -263,14 +311,14 @@ async function stanford() {
   });
 
   ch.push(heading('Skills & Languages'));
-  C.skills.forEach(([k, v]) => ch.push(para([run(k + ': ', { bold: true }), run(v)], { spacing: { after: 20, line: 250 } })));
+  BD.skills.forEach(([k, v]) => ch.push(para([run(k + ': ', { bold: true }), run(v)], { spacing: { after: 20, line: 250 } })));
   ch.push(para([run('Languages: ', { bold: true }), run(C.languages)], { spacing: { after: 0, line: 250 } }));
 
   await save(makeDoc(spec, ch), 'Kasib_Cassim_CV_Stanford.docx');
 }
 
 // ---------- 3. Modern ATS (recommended for UAE / tech roles) ----------
-async function modern() {
+async function modern(V, file) {
   const NAVY = '1F3A5F';
   const spec = {
     margin: { top: 680, bottom: 600, left: 780, right: 780 },
@@ -288,17 +336,18 @@ async function modern() {
   ch.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 10 },
     children: [run(C.name.toUpperCase(), { bold: true, size: 34, color: NAVY, characterSpacing: 30 })] }));
   ch.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 40 },
-    children: [run(C.headline, { bold: true, size: 21, color: '444444' })] }));
+    children: [run(V.headline, { bold: true, size: 21, color: '444444' })] }));
   ch.push(...contactLines(h, '  |  ', { alignment: AlignmentType.CENTER }));
 
   ch.push(heading('Professional Summary'));
-  ch.push(para([run(C.summary)], { spacing: { after: 20, line: 250 }, alignment: AlignmentType.JUSTIFIED }));
+  ch.push(para([run(V.summary)], { spacing: { after: 20, line: 250 }, alignment: AlignmentType.JUSTIFIED }));
 
-  ch.push(heading('Key Achievements'));
-  C.highlights.forEach(([b, rest]) => ch.push(bullet([run(b, { bold: true }), run(rest)])));
+  ch.push(heading(V.boxTitle));
+  V.box.forEach(([b, rest]) => ch.push(bullet([run(b, { bold: true }), run(rest)])));
+  if (V.boxLink) ch.push(para([run(V.boxLink, { italics: true, highlight: 'yellow' })], { spacing: { before: 20, after: 0 } }));
 
   ch.push(heading('Core Skills'));
-  [...C.skills, ['Languages', C.languages]].forEach(([k, v]) => ch.push(para([run(k + ': ', { bold: true, color: NAVY }), run(v)], { spacing: { after: 20, line: 240 } })));
+  [...V.skills, ['Languages', C.languages]].forEach(([k, v]) => ch.push(para([run(k + ': ', { bold: true, color: NAVY }), run(v)], { spacing: { after: 20, line: 240 } })));
 
   ch.push(heading('Professional Experience'));
   C.jobs.forEach((j, i) => {
@@ -307,9 +356,7 @@ async function modern() {
       ch.push(lineLR(r.title, r.dates, { bold: true, size: 21, color: NAVY }, { bold: true },
         { spacing: { before: first ? (i ? 120 : 0) : 60 } }));
       if (first) ch.push(lineLR(j.org, j.loc, { bold: true, color: '444444' }, { italics: true, color: '444444' }, { spacing: { after: 20 } }));
-      // Key Achievements already carries the headline metrics, so keep each role to its strongest points
-      const skip = ['Turning buyer conversations', 'Shaped go-to-market', 'Streamlined workflows'];
-      r.bullets.filter(b => !skip.some(x => b.startsWith(x))).forEach(b => ch.push(bullet(b)));
+      r[V.key].filter(k => !V.skip.includes(k)).forEach(k => ch.push(bullet(B[k])));
     });
   });
 
@@ -321,7 +368,12 @@ async function modern() {
     ] }));
   });
 
-  await save(makeDoc(spec, ch), 'Kasib_Cassim_CV_Modern_ATS.docx');
+  await save(makeDoc(spec, ch), file);
 }
 
-(async () => { await harvard(); await stanford(); await modern(); })();
+(async () => {
+  await modern(GTM, 'Kasib_Cassim_CV_GTM_Engineer.docx');
+  await modern(BD, 'Kasib_Cassim_CV_BD_Sales.docx');
+  await harvard();
+  await stanford();
+})();
