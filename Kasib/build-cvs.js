@@ -36,7 +36,7 @@ const C = {
   name: 'Mohamed Kasib Farhan Cassim',
   location: 'United Arab Emirates',
   email: 'kasibfarhan@gmail.com',
-  phone: '+971 56 406 165',
+  phone: '+971 56 540 6165',
   linkedin: 'linkedin.com/in/mohamed-kasib-farhan-cassim-7b2a4222b',
   status: 'Own visa (no sponsorship needed)',
   licence: 'Driving licence',
@@ -202,7 +202,7 @@ function contactLines(h, sep, pOpts = {}) {
     new Paragraph({ ...pOpts, spacing: { after: 0 }, children: [
       run(C.location), run(sep),
       link(C.email, 'mailto:' + C.email), run(sep),
-      run(C.phone, { highlight: 'yellow' }),
+      run(C.phone),
     ] }),
     new Paragraph({ ...pOpts, spacing: { after: 40 }, children: [
       link(C.linkedin, 'https://www.' + C.linkedin), run(sep), run(C.status), run(sep), run(C.licence),
